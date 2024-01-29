@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputDisease"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/app_text_icons"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtnameinpd"
+        android:text="Patient Name"
+        android:textColor="@color/app_primary_text"
+        android:textSize="25sp"
+        android:layout_margin="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your Symptoms"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.936" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Symptom 1 -->
+            <Spinner
+                android:id="@+id/symptom1Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="50dp"
+                android:textAlignment="center"
+                android:layout_margin="15dp"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:background="@drawable/border"
+                android:outlineAmbientShadowColor="@color/app_primary_text"
+
+
+                />
+
+            <!-- Symptom 2 -->
+            <Spinner
+                android:id="@+id/symptom2Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="50dp"
+                android:textAlignment="center"
+                android:layout_margin="15dp"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:background="@drawable/border"
+                android:outlineAmbientShadowColor="@color/app_primary_text"/>
+
+            <!-- Symptom 3 -->
+            <Spinner
+                android:id="@+id/symptom3Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="50dp"
+                android:textAlignment="center"
+                android:layout_margin="15dp"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:background="@drawable/border"
+                android:outlineAmbientShadowColor="@color/app_primary_text"/>
+
+            <!-- Symptom 4 -->
+            <Spinner
+                android:id="@+id/symptom4Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="50dp"
+                android:textAlignment="center"
+                android:layout_margin="15dp"
+                android:background="@drawable/border"
+                android:outlineAmbientShadowColor="@color/app_primary_text"
+                tools:ignore="SpeakableTextPresentCheck"/>
+
+            <!-- Symptom 5 -->
+            <Spinner
+                android:id="@+id/symptom5Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="50dp"
+                android:textAlignment="center"
+                android:layout_margin="15dp"
+                android:background="@drawable/border"
+                android:outlineAmbientShadowColor="@color/app_primary_text"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+
+            <TextView
+                android:id="@+id/op"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:textSize="30dp"
+                android:layout_margin="10dp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.936" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Predict"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:background="@drawable/button_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.412"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.788" />
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

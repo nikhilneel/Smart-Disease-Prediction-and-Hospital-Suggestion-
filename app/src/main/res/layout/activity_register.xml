@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical"
+    android:background="@color/app_text_icons">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <TextView
+        android:id="@+id/tvinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:textSize="25sp"
+        android:text="Enter Following Details"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/app_primary_text"
+
+        />
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Patient Name"
+        android:layout_below="@id/tvinfo"
+        android:textSize="20sp"
+        android:layout_margin="40dp"
+        android:maxLines="1"
+        android:textStyle="bold"
+        android:textColor="@color/app_primary_text"
+        android:textColorHint="@color/app_secondary_text"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/etgender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Gender"
+        android:layout_below="@id/etname"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:maxLines="1"
+        android:textStyle="bold"
+        android:textColor="@color/app_primary_text"
+        android:textColorHint="@color/app_secondary_text"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/etage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Age"
+        android:textSize="20sp"
+
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@id/etgender"
+        android:maxLines="1"
+        android:inputType="number"
+        android:textStyle="bold"
+        android:textColor="@color/app_primary_text"
+        android:textColorHint="@color/app_secondary_text"/>
+    <Button
+        android:id="@+id/btndisease"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etage"
+        android:text="Predict Disease"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="15sp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/app_text_icons"
+        android:background="@drawable/button_background"
+        />
+
+</RelativeLayout>

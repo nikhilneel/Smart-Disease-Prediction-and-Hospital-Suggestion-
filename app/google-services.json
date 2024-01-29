@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "964993984300",
+    "project_id": "predictdisease-8ef8f",
+    "storage_bucket": "predictdisease-8ef8f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964993984300:android:f991ed3339a8d8cdd7ae89",
+        "android_client_info": {
+          "package_name": "com.example.predictdisease"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6u03nf5EPlD7sLpgNmgX4fFhSm-Fiw4A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
